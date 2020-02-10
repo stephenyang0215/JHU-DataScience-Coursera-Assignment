@@ -1,0 +1,6 @@
+png("plot3.png", width = 480, height = 480)
+plot(Power_consumption$Sub_metering_1 ~ Power_consumption$Timing, type = "l")
+lines(Power_consumption$Sub_metering_2 ~ Power_consumption$Timing, col = "red")
+lines(Power_consumption$Sub_metering_3 ~ Power_consumption$Timing, col = "blue")
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = "solid", col = c("black", "red", "blue"))
+dev.off()
